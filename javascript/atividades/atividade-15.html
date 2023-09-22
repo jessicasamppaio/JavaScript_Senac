@@ -1,0 +1,20 @@
+<script>
+
+let lado1 = prompt('Digite o valor de um lado do triangulo: ','')
+let lado2 = prompt('Digite o valor do segundo lado trinagulo: ','')
+let lado3 = prompt('Digite o valor do terceiro lado do triangulo: ','')
+
+if(lado1 === lado2 && lado2 === lado3 && lado3 === lado1){
+    document.write('<h1>Esse é um triangulo <font color=blue>equilátero<font></h1>');
+}
+
+else if(lado1 === lado2 || lado2 === lado3 || lado3 === lado1){
+    document.write('<h1>Esse é um triangulo <font color=red>isóceles<font></h1>');
+}
+
+else{
+    document.write('<h1>Esse triângulo é um <font color=red>escaleno</font></h1>')
+}
+
+
+</script>
