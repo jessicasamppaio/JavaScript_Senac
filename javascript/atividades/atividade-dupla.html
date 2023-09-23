@@ -1,0 +1,75 @@
+<script>
+
+ 
+
+    let welcome = alert('Seja bem-vindo ao quiz, escolha a alternativa correta','');
+
+    let p1 = prompt ('1. O que a palavra legend significa em português? \na) Legenda  \nb) Conto \nc) História \nd) Lenda \ne) Legendário');
+
+    let p2 = prompt('2. De quem é a famosa frase “Penso, logo existo”? \na) Platão \nb) Galileu Galilei \nc) Descartes \nd) Sócrates \ne) Francis Bacon');
+
+    let p3 = prompt('3. De onde é a invenção do chuveiro elétrico? \na) França \nb) Inglaterra \nc) Brasil \nd) Austrália \ne) Itália');
+
+    let p4 = prompt('4. Quais o menor e o maior país do mundo? \na) Vaticano e Rússia \nb) Nauru e China \nc) Mônaco e Canadá \nd) Malta e Estados Unidos \ne) São Marino e Índia');
+
+    let p5 = prompt('5. Em que período da pré-história o fogo foi descoberto? \na) Neolítico \nb) Paleolítico \nc) Idade dos Metais \nd) Período da Pedra Polida \ne) Idade Média');
+
+ 
+
+     
+
+    document.write('<h1><font color=blue>Resultado</font></h1>')
+
+ 
+
+    let resultado = (p1 === 'd') ? 1 : 0;
+
+    document.write('<br><font size=5>Sua resposta: ' + p1)
+
+    document.write('<br>Resposta correta: d')
+
+ 
+
+    let resultado2 = (p2 === 'c') ? 1 : 0
+
+    document.write('<br><hr><br>Sua resposta: ' + p2)
+
+    document.write('<br>Resposta correta: c')
+
+ 
+
+    let resultado3 = (p3 === 'c') ? 1 : 0;
+
+    document.write('<br><hr><br>Sua resposta: ' + p3)
+
+    document.write('<br>Resposta correta: c')
+
+ 
+
+    let resultado4 = (p4 === 'a') ? 1 : 0;
+
+    document.write('<br><hr><br>Sua resposta: ' + p4)
+
+    document.write('<br>Resposta correta: a')
+
+ 
+
+    let resultado5 = (p5 === 'b') ? 1 : 0;
+
+    document.write('<br><hr><br>Sua resposta: ' + p5)
+
+    document.write('<br>Resposta correta: b')
+
+ 
+
+   let soma = parseInt (resultado+resultado2+resultado3+resultado4+resultado5)
+
+ 
+
+   document.write('<br><br><h1><hr>Total: ' + soma);
+
+ 
+
+ 
+
+</script>
