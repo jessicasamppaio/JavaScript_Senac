@@ -1,0 +1,30 @@
+<script>
+    function imprimirSaudacao() {
+        console.log('Seja bem-vindo');
+    }
+
+    imprimirSaudacao();
+
+    // Verificar qual valor será doado para as instituições que o usuário desejar com base no valor que o usuário tem.
+
+    
+    function dividir(a, b){
+
+       a = parseInt(prompt('Digite quanto tem para doar: '));
+
+       b = parseInt(prompt('Informe quantas instituições deseja ajudar: '))
+
+       let resultado = a / b;
+
+       return resultado;
+      }
+
+     let resultado = dividir();
+      document.write('<h1>Você doará ' + resultado + ' para cada intituição')
+      console.log(resultado);
+
+      </script>
+
+
+
+    
