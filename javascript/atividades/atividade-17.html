@@ -1,0 +1,19 @@
+<script>
+    
+
+let v1 = parseInt(prompt("Qual o custo do produto? "));
+let v2 = parseInt(prompt("Qual será o percentual de venda? "));
+
+let porcem = (v1*v2)/100
+let valor = parseInt(v1 + porcem)
+let lucro = parseInt(valor - v1)
+
+
+
+document.write("<font size=5>Valor de custo: " + v1);
+document.write("<br>Percentual de venda: " + v2 + '%');
+document.write("<br>Valor de venda: "+ valor);
+document.write("<br>Lucro: <font color=red>R$ "+ lucro);
+
+
+</script>
