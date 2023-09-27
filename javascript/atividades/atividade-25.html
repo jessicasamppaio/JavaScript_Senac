@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Funções de callback em JavaScript</h1>
+    <button id="botao1" onclick="mudarCorV()">Alterar fundo para vermelho</button>
+    <button id="botao2" onclick="mudarCorB()">Alterar fundo para branco</button>
+    <button id="botao3" onclick="mensagemNoAlert()">Mensagem no alert</button>
+    <button id="botao4" onclick="mensagemNaPagina()">Mensagem na página</button>
+
+    <script>
+
+        
+        function mudarCorV(){
+            document.bgColor='red';
+        }
+
+        function mudarCorB(){
+            document.bgColor='white';
+        }
+
+        function mensagemNoAlert(){
+           alert('Que aula show!\nO Cristiano é demais!')
+        }
+
+        function mensagemNaPagina(){
+            document.write('<h1>Adoro JavaScript</h1>')
+        }
+    </script>
+</body>
+</html>
