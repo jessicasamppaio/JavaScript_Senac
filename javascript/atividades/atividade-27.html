@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+
+    let n1 = parseInt(prompt('Digite o 1º valor: '));
+    let op = prompt('Escolha qual operação deseja realizar: ')
+    let n2 = parseInt(prompt('Digite o 2º valor: '));
+    
+  
+
+   document.write('<br>Primeiro valor: ' + n1);
+   document.write('<br>Segundo valor: ' + n2);
+   document.write('<br>Operação escolhida: ' + op);
+   
+
+   if(op == '+'){
+    document.write('<br>Resultado: ' + (n1 + n2));
+    }
+
+    else if(op == '*'){
+   document.write('<br>Resultado: ' + (n1 * n2));
+    }
+
+    else if(op == '/'){
+   document.write('<br>Resultado: ' + (n1 / n2))
+
+    }
+
+   if(op == '-'){
+    document.write('<br>Resultado: ' + (n1 - n2))
+
+   }
+  
+
+   </script> 
+</body>
+</html>
