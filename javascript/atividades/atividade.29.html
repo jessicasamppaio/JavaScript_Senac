@@ -6,15 +6,10 @@
     <title>Document</title>
 </head>
 <body>
+    <input type="text" placeholder="Digite seu nome" id="nome_usuario" class="campo_texto" name="nome">
     <script>
-        document.write('<br>');
-
-let data = new Date();
-
-document.write('Quinta-feira, ' + data.getDate())
-document.write(' de Setembro');
-document.write(' de' + data.getFullYear());
-
+        elementoPorId = document.getElementById('nome_usuario').placeholder;
+        console.log(elementoPorId);
     </script>
 </body>
 </html>

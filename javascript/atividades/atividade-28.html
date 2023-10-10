@@ -7,15 +7,13 @@
 </head>
 <body>
     <script>
-        document.write('<br>')
-        let data = new Date();
-        
+        document.write('<br>');
 
-        document.write(data.getDate())
-        document.write('/0');
-        document.write((data.getMonth() +1));
-        document.write('/')
-        document.write(data.getFullYear())
+let data = new Date();
+
+document.write('Quinta-feira, ' + data.getDate())
+document.write(' de Setembro');
+document.write(' de' + data.getFullYear());
 
     </script>
 </body>

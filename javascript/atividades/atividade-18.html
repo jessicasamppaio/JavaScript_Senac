@@ -1,0 +1,93 @@
+<script>
+
+ 
+
+    alert('Seja bem-vindo! \nResponda as questões com a LETRA da alternativa CORRETA!!!')
+
+ 
+
+    let pergunta1 = parseInt(prompt('1ª Qual é o planeta mais próximo do Sol?\n1) Vênus\n2) Terra\n3) Marte\n4) Mercúrio'))
+
+    //  4
+
+ 
+
+    let pergunta2 = prompt('2ª Qual é o maior osso no corpo humano?\n1) Fêmur\n2) Úmero\n3) Rádio\n4) Tíbia')
+
+    //  1
+
+ 
+
+    let pergunta3 = prompt('3ª Qual é a capital do Japão?\n1) Xangai\n2) Seul\n3) Tóquio\n4) Pequim')
+
+    //  3
+
+ 
+
+    let pergunta4 = prompt('4ª Qual é o processo pelo qual as plantas convertem a luz solar em energia?\n1) Fotossíntese\n2) Respiração\n3) Transpiração\n4) Fototropismo')
+
+    //  4
+
+ 
+
+    let pergunta5 = prompt('5ª Quem escreveu a peça de teatro "Romeu e Julieta"?\n1) Charles Dickens\n2) William Shakespeare\n3) Jane Austen\n4) Mark Twain')
+
+    //  2
+
+ 
+
+    
+
+    let soma1 = (pergunta1 == 4) ? 1 : 0
+
+    let soma2 = (pergunta2 == 1) ? 1 : 0
+
+    let soma3 = (pergunta3 == 3) ? 1 : 0
+
+    let soma4 = (pergunta4 == 4) ? 1 : 0
+
+    let soma5 = (pergunta5 == 2) ? 1 : 0
+
+ 
+
+ 
+
+    document.write('<h2><font color=blue>Resultado</font></h2><br><br>')
+
+ 
+
+    // Pergunta 1
+
+    document.write('Pergunta 1:<br>Qual é o planeta mais próximo do Sol?<br>Alternativa correta: <font color=blue><b> 4 </b></font><br>Sua resposta: <b>' + pergunta1 + '</b><hr>')
+
+ 
+
+    // Pergunta 2
+
+    document.write('Pergunta 2:<br>Qual é o maior osso no corpo humano?<br>Alternativa correta: <font color=blue><b> 1 </b></font><br>Sua resposta: <b>' + pergunta2 + '</b><hr>')
+
+ 
+
+    // Pergunta 3
+
+    document.write('Pergunta 3:<br>Qual é a capital do Japão?<br>Alternativa correta: <font color=blue><b> 3 </b></font><br>Sua resposta: <b>' + pergunta3 + '</b><hr>')
+
+ 
+
+    // Pergunta 4
+
+    document.write('Pergunta 4:<br>Qual é o processo pelo qual as plantas convertem a luz solar em energia?<br>Alternativa correta: <font color=blue><b> 4 </b></font><br>Sua resposta: <b>' + pergunta4 + '</b><hr>')
+
+ 
+
+    // Pergunta 5
+
+    document.write('Pergunta 5:<br>Quem escreveu a peça de teatro "Romeu e Julieta"?<br>Alternativa correta: <font color=blue><b> 2 </b></font><br>Sua resposta: <b>' + pergunta5 + '</b><hr>')
+
+ 
+
+    document.write('Pontos: ' + parseInt(soma1+soma2+soma3+soma4+soma5))
+
+ 
+
+</script>

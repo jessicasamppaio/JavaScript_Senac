@@ -1,55 +1,119 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<html>
+	<head>
+		<title>Calculadora</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercícios de JavaScript</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
-<body>
-    <main>
-        <h1>Exercícios de JavaScript</h1>
+    <style>
+      .calculadora {
+        margin-top: 40px;
+        border: solid 1px #000;
+        padding: 20px;
+        background-color: #2E2E2E;
+        border-radius: 10px;
+        box-shadow: 1px 1px 5px #000;
+      }
 
-        <aside>
-            <h1 class="titulo-2">&#x1f4da; Listas de exercicios de javascript turma curso tecnico de Informática para Internet - Senac </h1>
+      .btn {
+        width: 60px;
+        height: 50px;
+        margin: 5px;
+        box-shadow: 1px 1px 1px #000;
+      }
+
+      .clear {
+        width: 130px;
+      }
+
+      .enter {
+        height: 110px;
+      }
+
+      .zero {
+        width: 130px;
+      }
+
+      .resultado {
+        text-align: right;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border: solid 1px #000;
+        box-shadow: 1px 1px 1px #000;
+      }
+
+    </style>
+	</head>
+
+  <body style="background: #D9D9D9">
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col d-flex justify-content-center">
+          <br />
+
+          <div class="calculadora">
+            <input type="text" id="resultado" class="form-control resultado" placeholder="0" disabled="disabled" />
             
-        </aside>
+            <div class="row">
+              <button onclick="calcular('acao', 'c')" type="button" class="btn btn-dark btn-lg clear font-weight-light">C</button>
+              <button onclick="calcular('acao', '/')" type="button" class="btn btn-dark btn-lg font-weight-light">/</button>
+              <button onclick="calcular('acao', '*')" type="button" class="btn btn-dark btn-lg font-weight-light">x</button>
+            </div>
 
-        <aside>
-            <h2 class="titulo-2">&#x1f4bb; Desenvolvedor: Jéssica Sampaio</h2>
-        </aside>
-
-        <h2>&#x1F4C1; Atividades desenvolvidas no curso de javascript</h2>
-        <ul>
-            <li><a href="atividades/atividade-01.html">Atividade - 001</a>: Manipulação de Variaveis</li>
-            <li><a href="atividades/atividade-02.html">Atividade - 002</a>: Registro de aluno</li>
-            <li><a href="atividades/atividade-03.html">Atividade - 003</a>: Alterando os valores das variaveis</li>
-            <li><a href="atividades/atividade-04.html">Atividade - 004</a>: Registro de Nome e Aniversário</li>
-            <li><a href="atividades/atividade-05.html">Atividade - 005</a>: Troca de Valores em JavaScript</li>
-            <li><a href="atividades/atividade-06.html">Atividade - 006</a>:  Encontre o Número Correto!</li>
-            <li><a href="atividades/atividade-07.html">Atividade - 007</a>: Cor de fundo</li>
-            <li><a href="atividades/atividade-08.html">Atividade - 008</a>: Situação do aluno</li>
-            <li><a href="atividades/atividade-09.html">Atividade - 009</a>: Verificação de idade</li>
-            <li><a href="atividades/atividade-010.html">Atividade - 010</a>: Registro de aluno</li>
-            <li><a href="atividades/atividade-11.html">Atividade - 011</a>: Permitir acesso de acordo com idade</li>
-            <li><a href="atividades/atividade-12.html">Atividade - 012</a>: A concluir</li>
-            <li><a href="atividades/atividade-13.html">Atividade - 013</a>: Informaçõs sobre fruta digitada</li>
-            <li><a href="atividades/atividade-14.html">Atividade - 014</a>: Numero sucessor e antecessor</li>
-            <li><a href="atividades/atividade-15.html">Atividade - 015</a>: Calcular área do triângulo</li>
-            <li><a href="atividades/atividade-16.html">Atividade - 016</a>: Notas</li>
-            <li><a href="atividades/atividade-17.html">Atividade - 017</a>: Percentual</li>
-            <li><a href="atividades/atividade-18.html">Atividade - 018</a>: A concluir</li>
-            <li><a href="atividades/atividade-19.html">Atividade - 019</a>: A concluir</li>
-            <li><a href="atividades/atividade-20.html">Atividade - 020</a>: Void e Return</li>
-            <li><a href="atividades/atividade-21.html">Atividade - 021</a>: Média</li>
-            <li><a href="atividades/atividade-22.html">Atividade - 022</a>: Metros quadrados</li>
+            <div class="row">
+              <button onclick="calcular('valor', 7)" type="button" class="btn btn-dark btn-lg font-weight-light">7</button>
+              <button onclick="calcular('valor', 8)" type="button" class="btn btn-dark btn-lg font-weight-light">8</button>
+              <button onclick="calcular('valor', 9)" type="button" class="btn btn-dark btn-lg font-weight-light">9</button>
+              <button onclick="calcular('acao', '-')" type="button" class="btn btn-dark btn-lg font-weight-light">-</button>
+            </div>
             
+            <div class="row">
+              <button onclick="calcular('valor', 4)" type="button" class="btn btn-dark btn-lg font-weight-light">4</button>
+              <button onclick="calcular('valor', 5)" type="button" class="btn btn-dark btn-lg font-weight-light">5</button>
+              <button onclick="calcular('valor', 6)" type="button" class="btn btn-dark btn-lg font-weight-light">6</button>
+              <button onclick="calcular('acao', '+')" type="button" class="btn btn-dark btn-lg font-weight-light">+</button>
+            </div>
 
-        </ul>
-        
-    </main>
-</body>
+            <div class="row">
+              <button onclick="calcular('valor', 1)" type="button" class="btn btn-dark btn-lg font-weight-light">1</button>
+              <button onclick="calcular('valor', 2)" type="button" class="btn btn-dark btn-lg font-weight-light">2</button>
+              <button onclick="calcular('valor', 3)" type="button" class="btn btn-dark btn-lg font-weight-light">3</button>
+              <button onclick="calcular('acao', '=')" type="button" class="btn btn-dark btn-lg enter">=</button>
+            </div>
+
+            <div class="row" style="margin-top: -60px">
+              <button onclick="calcular('valor', 0)" type="button" class="btn btn-dark zero btn-lg font-weight-light">0</button>
+              <button onclick="calcular('acao', '.')" type="button" class="btn btn-dark btn-lg font-weight-light">.</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      function calcular(tipo, valor){
+        if(tipo === 'acao') {
+          if(valor === 'c'){
+            //limpar o visor
+            document.getElementById('resultado').value = ''
+          }
+          if(valor === '+' || valor === '-' || valor === '*' || valor === '/' || valor === '.'){
+            document.getElementById('resultado').value += valor
+          }
+          if(valor === '=') {
+            var valor_campo = eval(document.getElementById('resultado').value)
+            document.getElementById('resultado').value = valor_campo
+          }
+        } else if (tipo === 'valor') {
+
+          document.getElementById('resultado').value += valor
+        }
+      }
+    </script>
+  </body>	
 
 </html>
