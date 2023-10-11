@@ -6,6 +6,70 @@
     <title>Document</title>
 </head>
 <body>
+
+    <style>
+
+        .body{
+            background-color: rgb(46, 12, 37);
+        }
+
+        .hr, .min, .seg{
+            border: 1px solid rgb(184, 108, 255);
+            font-size: 100px;
+        }
+     
+    </style>
+
+    <div id="container">
+     <span id="horas" class="hr"></span>
+     <span id="minutos" class="min"></span>
+     <span id="segundos" class="seg"></span>
+
+    </div>
+    <script>
+
+        const horas = document.getElementById('horas');
     
+        const minutos = document.getElementById('minutos');
+    
+        const segundos = document.getElementById('segundos');
+    
+       
+    
+        const relogio = setInterval(function time() {
+    
+            let dateToday = new Date();
+    
+            let hr = dateToday.getHours();
+    
+            let min = dateToday.getMinutes();
+    
+            let s = dateToday.getSeconds();
+    
+       
+    
+            if (hr < 10) hr = '0' + hr;
+    
+       
+    
+            if (min < 10) min = '0' + min;
+    
+       
+    
+            if (s < 10) s = '0' + s;
+    
+       
+    
+            horas.textContent = hr;
+    
+            minutos.textContent = min;
+    
+            segundos.textContent = s;
+    
+       
+    
+        })
+    
+    </script>
 </body>
 </html>

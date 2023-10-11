@@ -9,11 +9,11 @@ main {
     padding: 20px;
     margin: auto;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.529);
+    box-shadow: 5px 5px 5px rgba(151, 24, 255, 0.529);
 }
 
 h1 {
-    color: rgb(0, 0, 0);
+    color: rgb(129, 74, 167);
 }
 
 .titulo-2{
@@ -21,7 +21,7 @@ h1 {
 }
 
 h2 {
-    color: darkgoldenrod;
+    color: rgb(184, 11, 170);
 }
 
 aside {
@@ -42,11 +42,11 @@ aside img {
 }
 
 a, a:visited {
-    color: rgb(34, 34, 34);
+    color: rgb(88, 15, 90);
     font-weight: bolder;
 }
 
 a:hover {
-    color: darkgoldenrod;
+    color: rgb(106, 11, 184);
     text-decoration: none;
 }
